@@ -57,9 +57,9 @@ $(function() {
        it('changes visibility', function() {
          const menu = document.querySelector('.menu-icon-link');
          menu.click(); //first click
-         expect($('body').hasClass('menu-hidden')).toBe(false);
-         menu.click(); //second click
          expect($('body').hasClass('menu-hidden')).toBe(true);
+         menu.click(); //second click
+         expect($('body').hasClass('menu-hidden')).toBe(false);
        });
      });
      /* new test suite for Intial Entries*/
